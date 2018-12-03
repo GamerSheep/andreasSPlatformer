@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rbody.AddForce(new Vector2(moveSpeed * Input.GetAxis("Horizontal"), rbody.velocity.y));
 
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space))
         {
             if (groundcheck.touches > 0)
             {
