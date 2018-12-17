@@ -23,7 +23,7 @@ public class LoseCondition : MonoBehaviour
                 GameController health = controller.GetComponent<GameController>();
                 if (health != null)
                 {
-                    health.HealthCount--;
+                    health.HealthCount-= damage;
                     print(messageToDisplay);
                     if(health.HealthCount < 1)
                     {
